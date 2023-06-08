@@ -1,0 +1,25 @@
+.a-link:hover {
+    text-decoration: none;
+  }
+  
+  .a-link {
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .a-link:after {
+    border-radius: 1em;
+    border-top: .1em solid #ffffff80;
+    content: "";
+    position: absolute;
+      right: 100%;
+      bottom: .14em;
+      left: 0;
+    transition: right .4s cubic-bezier(0,.5,0,1);
+  }
+  
+  .a-link:hover:after {
+    right: 0;
+  }
+
+  
